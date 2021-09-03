@@ -6,24 +6,84 @@
     </head>
     <body>
         <script src="script.js"></script>
+
+        <!-- Header  -->
         <div id="headers">
             <h1 class= "header">✨ Welcome to My Web Page ✨ </h1>
             <h2 class= "headerTwo">A Page on the Web, by James Brownie </h2>
         </div>
+
         <div>
-           
-            <p style="color:white" id="aboutMe">About me: <br> Born in Manhattan, grew up in Mount Vernon, NY. Went to catholic highschool, ran track there. Went to Skidmore College in Saratoga Springs NY. My love of bicycles and the outdoors grew there. Got a compost-bicycle job (???) in Austin, TX so I moved there after graduation. Spent 6 years riding bikes and vibing in Austin, made a lot of good friends and memories along the way, and then realized I actually need to learn a marketable skill. Enrolled in the Flatiron School, and here I am! </p>
-        </div>
-        <p style="color:white"> this is just so i can 
-            <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br> hello <br>
+        <!-- About Me section -->
             
-        </p>
-        
-        <img PLANT PHOTOS >
-        <img more plant photo >
+            <p class="text" style="color:white" id="aboutMe">About me: <br> Born in Manhattan, grew up in Mount Vernon, NY. Went to catholic highschool, ran track there. Went to Skidmore College in Saratoga Springs NY. My love of bicycles and the outdoors grew there. Got a compost-bicycle job (???) in Austin, TX so I moved there after graduation. Spent 6 years riding bikes and vibing in Austin, made a lot of good friends and memories along the way, and then realized I actually need to learn a marketable skill. Enrolled in the Flatiron School, and here I am! </p>
+        </div>
+<!--         
+        /<img PLANT PHOTOS >
+        <img more plant photo > -->
         
 
-        <img ART I'VE MADE (collage poem) >
+        <!-- Container for image gallery-->
+        <div class="container">
+              <!-- Full-width images with number text -->
+            <h2 class="text" style="color:white">Check out these collages I've made</h2>  
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                    <img src="./pics for website/collages_for_my_website/collage1.jpg" alt="collage1" style="width:70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                    <img src="./pics for website/collages_for_my_website/collage2.jpg" alt="collage2" style="width:70%"">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                    <img src="./pics for website/collages_for_my_website/collage3.jpg" alt="collage3" style="width:70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                    <img src="./pics for website/collages_for_my_website/collage4.jpg" alt="collage4" style="width:70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                    <img src="./pics for website/collages_for_my_website/collage5.jpg" alt="collage5" style="width:70%">
+            </div>
+            
+            <!-- next and previous buttons -->
+            <a class ="prev" onclick="plusSlides(-1)">&#10094;</a>;
+            <a class ="next" onclick="plusSlides(1)">&#10095;</a>;
+
+
+            <!--Thumbnail images-->
+            
+            <div class="row" id ="thumbnails">
+                <div class="column">
+                  <img class="demo cursor" src="./pics for website/collages_for_my_website/collage1.jpg" style="width:100%" onclick="currentSlide(1)" alt="collage1">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./pics for website/collages_for_my_website/collage2.jpg" style="width:100%" onclick="currentSlide(2)" alt="collage2">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./pics for website/collages_for_my_website/collage3.jpg" style="width:100%" onclick="currentSlide(3)" alt="collage3">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./pics for website/collages_for_my_website/collage4.jpg" style="width:100%" onclick="currentSlide(4)" alt="collage4">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./pics for website/collages_for_my_website/collage5.jpg" style="width:100%" onclick="currentSlide(5)" alt="collage5">
+                </div>
+              </div>
+        </div>    
+        
+
+
+
+
+        
+        <!-- <img ART I'VE MADE (collage poem) > -->
 
         
         <img id="picOfMe" alt="A pic of me, by Calvin" height="350" src="./pics for website/pic of me by calvin.jpg">
