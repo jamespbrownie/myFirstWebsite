@@ -120,16 +120,15 @@ html {
   
   .row:after {
     content: "";
-    display: table;
     clear: both;
     
   }
   
   /* Thumbnail columns side by side */
   .column {
-    float:left;
+    display: inline-block;
     width: 15%;
-   
+    margin: 0 auto;
   }
   
   /* Add a transparency effect for thumnbail images */
