@@ -1,10 +1,41 @@
+//Buttons
+const aboutMe = document.getElementsById("button1")
+const collages = document.getElementsById("button2")
+const button3 = document.getElementsById("button3")
 
-const h2 = document.createElement('h2');
-h2.textContent = "You are now entering my Web Page";
 
-document.querySelector("body").appendChild(h2);
+aboutMe.addEventListener('click', function() {
+  aboutMe.style.display = "flex";
+  collages.style.display = 'none'
+})
+function clickButton1() {
+  var x = document.getElementById("buttonContent1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-//Slideshow Gallery //
+function clickButton2() {
+  var x = document.getElementById("buttonContent2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function clickButton3() {
+  var x = document.getElementById("buttonContent3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//Slideshow Gallery for button2 //
 let slideIndex = 1;
 showSlides(slideIndex);
 
