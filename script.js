@@ -1,39 +1,83 @@
-//Buttons
-const aboutMe = document.getElementsById("button1")
-const collages = document.getElementsById("button2")
-const button3 = document.getElementsById("button3")
 
+// //Buttons stored in variables
+const aboutMeButton = document.getElementById("button1")
+const collagesButton = document.getElementById("button2")
+const bigDayButton = document.getElementById("button3")
+const picOfMeButton = document.getElementById("button4")
 
-aboutMe.addEventListener('click', function() {
-  aboutMe.style.display = "flex";
-  collages.style.display = 'none'
-})
+// // Content hidden/shown by buttons  stored in variables
+const aboutMe = document.getElementById("buttonContent1");
+const collages = document.getElementById("buttonContent2");
+const bigDayToday = document.getElementById("buttonContent3");
+const picOfMe = document.getElementById("buttonContent4")
+
+//functions to be executed when buttons are clicked
 function clickButton1() {
-  var x = document.getElementById("buttonContent1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (aboutMe.style.display === "none") {
+    aboutMe.style.display = "inline-block";
+    collages.style.display = "none";
+    bigDayToday.style.display = "none";
+    picOfMe.style.display = "none";
   } else {
-    x.style.display = "none";
+    aboutMe.style.display = "none";
   }
 }
 
 function clickButton2() {
-  var x = document.getElementById("buttonContent2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (collages.style.display === "none") {
+    aboutMe.style.display = "none";
+    collages.style.display = "inline-block";
+    bigDayToday.style.display = "none";
+    picOfMe.style.display = "none";
   } else {
-    x.style.display = "none";
+    collages.style.display = "none";
   }
 }
 
 function clickButton3() {
-  var x = document.getElementById("buttonContent3");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (bigDayToday.style.display === "none") {
+    aboutMe.style.display = "none";
+    collages.style.display = "none";
+    bigDayToday.style.display = "inline-block";
+    picOfMe.style.display = "none";
   } else {
-    x.style.display = "none";
+    bigDayToday.style.display = "none";
   }
 }
+
+function clickButton4() {
+  if (picOfMe.style.display === "none") {
+    aboutMe.style.display = "none";
+    collages.style.display = "none";
+    bigDayToday.style.display = "none";
+    picOfMe.style.display = "inline-block";
+  } else {
+    bigDayToday.style.display = "none";
+  }
+}
+
+//Event Listeners for functions
+aboutMeButton.addEventListener('click', function() {
+  clickButton1()
+});
+
+collagesButton.addEventListener('click', function() {
+  clickButton2()
+});
+
+bigDayButton.addEventListener('click', function() {
+  clickButton3()
+});
+
+picOfMeButton.addEventListener('click', function() {
+  clickButton4()
+});
+
+
+
+
+
+//Slideshow 
 
 //Slideshow Gallery for button2 //
 let slideIndex = 1;
